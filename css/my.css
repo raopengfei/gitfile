@@ -1,0 +1,163 @@
+/* 定义文本中的图标字体 */
+
+@font-face {
+  font-family: 'renren';
+  src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: renren;
+    font-style: normal;
+}
+#header>.top-bar{
+	height: 40px;
+	border-bottom: 1px solid #E0E0E0;
+	text-align: center;
+	font-size: 10px;
+}
+#header>.top-bar .row a{
+	line-height: 40px;
+	color:#777777;
+}
+#header>.top-bar .row span{
+	line-height: 40px;
+	color:#777777;
+}
+#header>.top-bar .row>div+div{
+	border-left:1px solid  #E0E0E0;
+}
+.icon-mobilephone::before{
+    content: "\e908";
+    font-size: 13px;
+}
+#header .glyphicon::before{
+	content: "\e114";
+}
+#header>.top-bar .row img{
+	position: absolute;
+	left: 50%;
+	top: 40px;
+	margin-left: -60px;
+	display: none;
+}
+#header>.top-bar .row .col-md-2:hover>img{
+	display: block;
+	z-index: 999;
+}
+#header>.top-bar .row .btn{
+	background: red;
+	margin-right: 15px;
+}
+#header button{
+	margin-top: 19px;
+	margin-bottom: 19px;
+	display: none;
+}
+#header .container{
+	padding-right:0;
+	padding-left: 0; 
+}
+#header .navbar{
+	width:100%;
+	top:0;
+	z-index: 999;
+}
+.navbar-renren {
+  background-color: #fff;
+  border-color: #fff;
+  margin-bottom: 0;
+}
+
+#header .navbar-renren a {
+  height: 70px;
+  border-bottom: 2px solid #fff;
+  line-height: 40px ;
+  font-size: 14px;
+}
+#header .navbar-renren .active{
+	border-bottom: 2px solid red;
+	background: #fff;
+}
+#header .navbar-renren .navbar-collapse a:hover,#header .navbar-renren .navbar-collapse a:focus{
+	border-bottom: 2px solid red;
+}
+#header .navbar-renren .navbar-collapse .atrigger{
+	border-bottom: 2px solid red;
+}
+.icon-icon::before{
+	content: '\e920';
+	font-size: 50px;
+	color: red;
+	vertical-align: middle;
+}
+.icon-logo::before{
+	content:'\e93e';
+	font-size: 36px;
+	color: #000;
+	vertical-align: middle;
+}
+
+#banner .item{
+	height: 410px;
+}
+#banner .bg1{
+	background: url(../img/slide_01_2000x410.jpg) center no-repeat;
+}
+#banner .bg2{
+	background: url(../img/slide_02_2000x410.jpg) center no-repeat;
+}
+#banner .bg3{
+	background: url(../img/slide_03_2000x410.jpg) center no-repeat;
+}
+#banner img{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+#features {
+	padding: 40px 0;
+}
+#features a{
+	display: block;
+	width: 100%;
+	height: 84px;
+	color:#333333;
+}
+#features a:hover{
+	color: red;
+}
+#features [class^="icon-"]::before{
+	float: left;
+	width: 40px;
+	font-size: 30px;
+	height: 84px;
+	line-height: 84px;
+}
+#features .features-text{
+	float: left;
+	padding-top: 10px;
+}
+#features .icon-uniE907::before{
+	content: "\e907";
+}
+
+
+@media(max-width:767px){
+	#header button{
+		display: block;
+	}
+	#header li{
+		height: 60px;
+	}
+	#banner img{
+		display: block;
+	}
+	#banner .item{
+		height: 100%;
+	}
+	#features a{
+		display: none;
+	}
+}
+
+
